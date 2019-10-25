@@ -1,4 +1,4 @@
-[
+let profiles = [
 	{
 		"id": "1",
 		"name": "Herbert Bundy",
@@ -7,6 +7,7 @@
 		"hobbies": "Beer",
 		"imagesrc": "./img/bundy.jpg",
 		"favourite music": "Rock"
+
 },
 
 	{
@@ -60,8 +61,8 @@
 		"age": "32",
 		"location": "Paris",
 		"hobbies": "Fashion",
-		"imagesrc": "./img/.jpg",
-		"favourite music": ""
+		"imagesrc": "./img/kaley.jpg",
+		"favourite music": "Classic"
 		
 	},
 
@@ -185,18 +186,31 @@
 		
 	},
 
+	{
 
+		"id": "17",
+		"name": "Gerlinde Aniston",
+		"age": "37",
+		"location": "Bludenz",
+		"hobbies": "Dance",
+		"imagesrc": "./img/aniston.jpg",
+		"favourite music": "Soul"
+		
+	},
 
+	{
 
-
-
-
-
-
-
-
-
-
-
+		"id": "18",
+		"name": "Asuka Chan",
+		"age": "34",
+		"location": "Genf",
+		"hobbies": "Bird Watching",
+		"imagesrc": "./img/jackie.jpg",
+		"favourite music": "Hip-Hop"
+		
+	},
 
 ]
+
+
+//

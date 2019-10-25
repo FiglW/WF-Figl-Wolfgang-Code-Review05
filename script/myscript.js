@@ -1,188 +1,92 @@
-let profiles = [
-	{
-		"id": "1",
-		"name": "Herbert Bundy",
-		"age": "41",
-		"location": "Klosterneuburg",
-		"hobbies": "Beer",
-		"imagesrc": "./img/bundy.jpg",
-		"favourite music": "Rock"
-},
+window.onload = function(){
+let output = document.querySelector(".output");
 
-	{
-		"id": "2",
-		"name": "Robert Trejo",
-		"age": "43",
-		"location": "Innsbruck",
-		"hobbies": "Baking",
-		"imagesrc": "./img/danny.jpg",
-		"favourite music": "Classic"
-	},
+for(profile of profiles ){
+	output.innerHTML+= 
+	`<div class ="card cardSet1 text-white">
+                <div class="card-body">
+                    <img src="${profile.imagesrc}" class="img-thumbnail" alt="AL"width="auto">
+                    <h3 class="card-title mt-2">${profile.name}</h3>
+                    <h5 class="card-subtitle">${profile.location}</h5>
+                    <button id="${profile.id}"class= "mybutton"> Like 👍 </button>
+                    
+                </div>
+            </div>`
+            
+}
+let fav=[];
+let fav1=[];
 
-	{
-		"id": "3",
-		"name": "Hans Galecki",
-		"age": "32",
-		"location": "Vienna",
-		"hobbies": "Fishing",
-		"imagesrc": "./img/galecki.jpg",
-		"favourite music": "Soul"
-	},
+$(".mybutton").on("click",function(){
+	mid=$(this).attr("id");
+	z=mid-1;
 
-		{
+	console.log("mudss"+mid);
+	fav.push(profiles[z]);
+	console.log(fav);
+				chek= fav.includes(mid);
+  var fav1 = fav.filter(function(elem, index, self) {
+      return index === self.indexOf(elem);});
+	console.log(chek);
+      $(`.outputfav`).empty();
 
-		"id": "4",
-		"name": "Jaime Mayer",
-		"age": "38",
-		"location": "Budapest",
-		"hobbies": "Yoga",
-		"imagesrc": "./img/jaime.jpg",
-		"favourite music": "Rock/Metal"
+
+	for( i=0; i<fav1.length;i++){
+
+			
+		$(".outputfav").append(
+		`<div class ="card cardSet1 text-white id=fav${i}">
+                <div class="card-body">
+                    <img src="${fav1[i].imagesrc}"class="img-thumbnail" alt="AL"width="auto">
+                    <h3 class="card-title mt-2">${fav1[i].name}</h3>
+                    <h5 class="card-subtitle">${fav1[i].location}</h5>
+                    <button id="${fav1[i].id}"class= "mybutton1">remove</button>
+                </div>
+            </div>`	)
+		$(".mybutton1").on("click",function(){
+			it=($(this).attr("id"))-1;
+			console.log(it);
+			fav1.splice($.inArray(fav1[it], fav1),7);
+
+		$(this).parentsUntil(".card").remove();
+
+	
+
+		})
+
+	}
 		
-	},
 
-	{
 
-		"id": "5",
-		"name": "Jim Theory",
-		"age": "34",
-		"location": "Amsterdam",
-		"hobbies": "Bowling",
-		"imagesrc": "./img/jim.jpg",
-		"favourite music": "Rap"
-		
-	},
+	
+})
 
-	{
+/*
 
-		"id": "6",
-		"name": "Kaley Huber",
-		"age": "32",
-		"location": "Paris",
-		"hobbies": "Fashion",
-		"imagesrc": "./img/.jpg",
-		"favourite music": ""
-		
-	},
+let outputfav = document.querySelector(".outputfav");
+let button = document.querySelectorAll(".mybutton");
 
-	{
 
-		"id": "7",
-		"name": "Hanna Lawrence",
-		"age": "29",
-		"location": "Hollabrunn",
-		"hobbies": "Dance",
-		"imagesrc": "./img/lawrence.jpg",
-		"favourite music": "Hip-Hop"
-		
-	},
 
-	{
+arry = [];
 
-		"id": "8",
-		"name": "Peter Leonardo",
-		"age": "43",
-		"location": "Baden",
-		"hobbies": "Bird Watching",
-		"imagesrc": "./img/leonardo.jpg",
-		"favourite music": "Rock/Metal"
-		
-	},
 
-	{
 
-		"id": "9",
-		"name": "Margot Bauer",
-		"age": "35",
-		"location": "Korneuburg",
-		"hobbies": "Baking",
-		"imagesrc": "./img/margot.jpg",
-		"favourite music": "Classic"
-		
-	},
+	button.onclick = function(e){
+		profiles(this.id).push(arry);
+		for(arr of arry){
 
-	{
+	console.log(arry);
+		outputfav.innerHTML+=
+		`<div class ="card cardSet1 text-white">
+                <div class="card-body">
+                    <img src="${profiles[this.id].imagesrc}"class="img-thumbnail" alt="AL"width="auto">
+                    <h3 class="card-title mt-2">${profile.name}</h3>
+                    <h5 class="card-subtitle">${profile.location}</h5>
+                    
+                </div>
+            </div>`	}
+	}*/
+}
 
-		"id": "10",
-		"name": "Michelle Burton",
-		"age": "38",
-		"location": "New York",
-		"hobbies": "Beer",
-		"imagesrc": "./img/michelle.png",
-		"favourite music": "Rock"
-		
-	},
-
-	{
-
-		"id": "11",
-		"name": "Maria Portman",
-		"age": "41",
-		"location": "Berlin",
-		"hobbies": "Bird Watching",
-		"imagesrc": "./img/portman.jpg",
-		"favourite music": "Rap"
-		
-	},
-
-	{
-
-		"id": "12",
-		"name": "Scarlett Wurst",
-		"age": "29",
-		"location": "Vienna",
-		"hobbies": "Bowling",
-		"imagesrc": "./img/scarlett.jpg",
-		"favourite music": "Reggae"
-		
-	},
-
-	{
-
-		"id": "13",
-		"name": "Melanie Vergara",
-		"age": "33",
-		"location": "Hintertupfing",
-		"hobbies": "Beer",
-		"imagesrc": "./img/sofia.jpg",
-		"favourite music": "Rock"
-		
-	},
-
-	{
-
-		"id": "14",
-		"name": "Thomas Waltz",
-		"age": "45",
-		"location": "Budapest",
-		"hobbies": "Cycling",
-		"imagesrc": "./img/waltz.jpg",
-		"favourite music": "Classic"
-		
-	},
-
-	{
-
-		"id": "15",
-		"name": "Will Johnson",
-		"age": "44",
-		"location": "Salzburg",
-		"hobbies": "Cycling",
-		"imagesrc": "./img/will.jpg",
-		"favourite music": "Metal"
-		
-	},
-
-	{
-
-		"id": "16",
-		"name": "Rosa Helm",
-		"age": "34",
-		"location": "Hamburg",
-		"hobbies": "Dance",
-		"imagesrc": "./img/rosa.jpg",
-		"favourite music": "Reggae"
-		
-	},
-
-]
+;
