@@ -1,19 +1,24 @@
 window.onload = function(){
 let output = document.querySelector(".output");
 
-for(profile of profiles ){
+
+// candidates
+for(profile of profiles ){			
 	output.innerHTML+= 
 	`<div class ="card cardSet1 text-white">
                 <div class="card-body">
                     <img src="${profile.imagesrc}" class="img-thumbnail" alt="AL"width="auto">
                     <h3 class="card-title mt-2">${profile.name}</h3>
-                    <h5 class="card-subtitle">${profile.location}</h5>
-                    <button id="${profile.id}"class= "mybutton"> Like 👍 </button>
+                    <h5 class="card-subtitle">${profile.slogan}</h5>
+                    <button id="${profile.id}"class= "mybutton">&#10084;</button>
+
                     
                 </div>
             </div>`
+            /*btn btn-danger und eine andere klasse doesnt work with the click function :( */
             
 }
+
 let fav=[];
 let fav1=[];
 
@@ -30,20 +35,33 @@ $(".mybutton").on("click",function(){
 	console.log(chek);
       $(`.outputfav`).empty();
 
+//filter function//
+
+
+
+
+//favourite function//
 
 	for( i=0; i<fav1.length;i++){
 
 			
 		$(".outputfav").append(
-		`<div class ="card cardSet1 text-white id=fav${i}">
+		`<div class ="card cardSet3 text-white id=fav${i}">
                 <div class="card-body">
                     <img src="${fav1[i].imagesrc}"class="img-thumbnail" alt="AL"width="auto">
-                    <h3 class="card-title mt-2">${fav1[i].name}</h3>
+                    <h3 class="card-title mt-2">${fav1[i].name}
                     <h5 class="card-subtitle">${fav1[i].location}</h5>
-                    <button id="${fav1[i].id}"class= "mybutton1">remove</button>
+                    <h6 class="card-subtitle">${fav1[i].age}</h6>
+                    <p class=" card-para">${fav1[i].hobbies}</p>
+                    <p class=" card-para">${fav1[i].favouritemusic}</p>
+
+                    <button id="${fav1[i].id}"class= "dislikebutton">&#128078;</button>
                 </div>
             </div>`	)
-		$(".mybutton1").on("click",function(){
+
+
+		// remove funktion//
+		$(".dislikebutton").on("click",function(){
 			it=($(this).attr("id"))-1;
 			console.log(it);
 			fav1.splice($.inArray(fav1[it], fav1),7);
@@ -61,32 +79,10 @@ $(".mybutton").on("click",function(){
 	
 })
 
-/*
 
-let outputfav = document.querySelector(".outputfav");
-let button = document.querySelectorAll(".mybutton");
-
-
-
-arry = [];
-
-
-
-	button.onclick = function(e){
-		profiles(this.id).push(arry);
-		for(arr of arry){
-
-	console.log(arry);
-		outputfav.innerHTML+=
-		`<div class ="card cardSet1 text-white">
-                <div class="card-body">
-                    <img src="${profiles[this.id].imagesrc}"class="img-thumbnail" alt="AL"width="auto">
-                    <h3 class="card-title mt-2">${profile.name}</h3>
-                    <h5 class="card-subtitle">${profile.location}</h5>
-                    
-                </div>
-            </div>`	}
-	}*/
 }
 
 ;
+
+
+

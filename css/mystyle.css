@@ -5,8 +5,6 @@ body{
 
 
 
-
-andere version die mit cards back to the roots!!!
 .card-body {
     
     padding: 0.5rem;
@@ -41,11 +39,21 @@ andere version die mit cards back to the roots!!!
 
 h3.card-title{
 	font-size: 1.5rem;
+
+
 }
 
 h5.card-subtitle{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding-bottom: 1.2rem;
+}
+
+
+h6.card-subtitle{
+	font-size: 1rem;
+	padding-bottom: 1.2rem;
+
+
 }
 
 p.card-text{
@@ -55,4 +63,10 @@ p.card-text{
 
 .img-thumbnail{
 	height: 490px;
+}
+.mybutton{
+	border-style: none;
+	background-color: #669999;
+	color: red;
+	
 }

@@ -6,7 +6,8 @@ let profiles = [
 		"location": "Klosterneuburg",
 		"hobbies": "Beer",
 		"imagesrc": "./img/bundy.jpg",
-		"favourite music": "Rock"
+		"favouritemusic": "Rock",
+		"slogan": "i like shoes"
 
 },
 
@@ -17,7 +18,8 @@ let profiles = [
 		"location": "Innsbruck",
 		"hobbies": "Baking",
 		"imagesrc": "./img/danny.jpg",
-		"favourite music": "Classic"
+		"favouritemusic": "Classic",
+		"slogan": "Bake the World a Butter Place"
 	},
 
 	{
@@ -27,7 +29,8 @@ let profiles = [
 		"location": "Vienna",
 		"hobbies": "Fishing",
 		"imagesrc": "./img/galecki.jpg",
-		"favourite music": "Soul"
+		"favouritemusic": "Soul",
+		"slogan": "Keep Calm and Fish On"
 	},
 
 		{
@@ -38,7 +41,8 @@ let profiles = [
 		"location": "Budapest",
 		"hobbies": "Yoga",
 		"imagesrc": "./img/jaime.jpg",
-		"favourite music": "Rock/Metal"
+		"favouritemusic": "Rock/Metal",
+		"slogan": "Yoga is best to reduce stress"
 		
 	},
 
@@ -50,7 +54,8 @@ let profiles = [
 		"location": "Amsterdam",
 		"hobbies": "Bowling",
 		"imagesrc": "./img/jim.jpg",
-		"favourite music": "Rap"
+		"favouritemusic": "Rap",
+		"slogan": "Bowlers never die"
 		
 	},
 
@@ -62,7 +67,8 @@ let profiles = [
 		"location": "Paris",
 		"hobbies": "Fashion",
 		"imagesrc": "./img/kaley.jpg",
-		"favourite music": "Classic"
+		"favouritemusic": "Classic",
+		"slogan": "Shopping is cheaper than a psychiatrist"
 		
 	},
 
@@ -72,9 +78,10 @@ let profiles = [
 		"name": "Hanna Lawrence",
 		"age": "29",
 		"location": "Hollabrunn",
-		"hobbies": "Dance",
+		"hobbies": "Baking",
 		"imagesrc": "./img/lawrence.jpg",
-		"favourite music": "Hip-Hop"
+		"favouritemusic": "Hip-Hop",
+		"slogan": "Hip-Hop rules the world"
 		
 	},
 
@@ -86,7 +93,8 @@ let profiles = [
 		"location": "Baden",
 		"hobbies": "Bird Watching",
 		"imagesrc": "./img/leonardo.jpg",
-		"favourite music": "Rock/Metal"
+		"favouritemusic": "Rock/Metal",
+		"slogan": "i love birds"
 		
 	},
 
@@ -98,7 +106,8 @@ let profiles = [
 		"location": "Korneuburg",
 		"hobbies": "Baking",
 		"imagesrc": "./img/margot.jpg",
-		"favourite music": "Classic"
+		"favouritemusic": "Classic",
+		"slogan": "Baking is my life"
 		
 	},
 
@@ -110,7 +119,8 @@ let profiles = [
 		"location": "New York",
 		"hobbies": "Beer",
 		"imagesrc": "./img/michelle.png",
-		"favourite music": "Rock"
+		"favouritemusic": "Rock",
+		"slogan": "Save water drink beer"
 		
 	},
 
@@ -122,7 +132,8 @@ let profiles = [
 		"location": "Berlin",
 		"hobbies": "Bird Watching",
 		"imagesrc": "./img/portman.jpg",
-		"favourite music": "Rap"
+		"favouritemusic": "Rap",
+		"slogan": "some of my best friends are birds"
 		
 	},
 
@@ -134,7 +145,8 @@ let profiles = [
 		"location": "Vienna",
 		"hobbies": "Bowling",
 		"imagesrc": "./img/scarlett.jpg",
-		"favourite music": "Reggae"
+		"favouritemusic": "Reggae",
+		"slogan": "Bowling, all cool babes doing it"
 		
 	},
 
@@ -146,7 +158,8 @@ let profiles = [
 		"location": "Hintertupfing",
 		"hobbies": "Beer",
 		"imagesrc": "./img/sofia.jpg",
-		"favourite music": "Rock"
+		"favouritemusic": "Rock",
+		"slogan": "my beer is not deppat"
 		
 	},
 
@@ -158,7 +171,8 @@ let profiles = [
 		"location": "Budapest",
 		"hobbies": "Cycling",
 		"imagesrc": "./img/waltz.jpg",
-		"favourite music": "Classic"
+		"favouritemusic": "Classic",
+		"slogan": "Life is like riding a bicycle"
 		
 	},
 
@@ -170,7 +184,8 @@ let profiles = [
 		"location": "Salzburg",
 		"hobbies": "Cycling",
 		"imagesrc": "./img/will.jpg",
-		"favourite music": "Metal"
+		"favouritemusic": "Metal",
+		"slogan": "To bike, or not to bike: that is not a question."
 		
 	},
 
@@ -180,9 +195,10 @@ let profiles = [
 		"name": "Rosa Helm",
 		"age": "34",
 		"location": "Hamburg",
-		"hobbies": "Dance",
+		"hobbies": "Bowling",
 		"imagesrc": "./img/rosa.jpg",
-		"favourite music": "Reggae"
+		"favouritemusic": "Reggae",
+		"slogan": "Bowling for life"
 		
 	},
 
@@ -194,7 +210,8 @@ let profiles = [
 		"location": "Bludenz",
 		"hobbies": "Dance",
 		"imagesrc": "./img/aniston.jpg",
-		"favourite music": "Soul"
+		"favouritemusic": "Soul",
+		"slogan": "Never miss a chance to Dance"
 		
 	},
 
@@ -206,7 +223,8 @@ let profiles = [
 		"location": "Genf",
 		"hobbies": "Bird Watching",
 		"imagesrc": "./img/jackie.jpg",
-		"favourite music": "Hip-Hop"
+		"favouritemusic": "Hip-Hop",
+		"slogan": "Don't be a nerd, save a bird"
 		
 	},
 
